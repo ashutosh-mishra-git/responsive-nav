@@ -39,7 +39,8 @@
     const bars = document.getElementById('bars');
     const mob_bars = document.getElementById('mob_bars');
 
-    addEventListener('click',()=>{
+    addEventListener('click',(e)=>{
+        e.preventDefault();
         mob_bars.classList.toggle('mob__navbar__visible');
     })
 
