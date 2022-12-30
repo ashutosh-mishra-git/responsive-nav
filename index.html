@@ -24,7 +24,7 @@
             <i class="fa-solid fa-bars" id="bars"></i>
          </div>
          <div class="mob__navbar " id="mob_bars">
-            <i class="fa-solid fa-xmark" style="margin-left: 40px;" ></i>
+            <i class="fa-solid fa-xmark" style="margin-left: 40px;" id="xmarks"></i>
                <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">About</a></li>
@@ -38,8 +38,13 @@
 <script>
     const bars = document.getElementById('bars');
     const mob_bars = document.getElementById('mob_bars');
+    const xmarks = document.getElementById('xmarks');
 
-    addEventListener('click',(e)=>{
+    bars.addEventListener('click',(e)=>{
+        e.preventDefault();
+        mob_bars.classList.toggle('mob__navbar__visible');
+    })
+    xmarks.addEventListener('click',(e)=>{
         e.preventDefault();
         mob_bars.classList.toggle('mob__navbar__visible');
     })
