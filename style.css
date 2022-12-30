@@ -92,7 +92,7 @@ ul>li>a:hover{
     .mob__navbar__visible{
         display: block;
         background-image: linear-gradient(to bottom,rgb(221, 90, 90), rgb(173, 173, 48));
-        /* align-items: center;*/
+        
         justify-content: center; 
         padding-top: 40px;
         transition: 2s all;
